@@ -31,11 +31,10 @@ export class ArticleComponent implements OnInit {
   }
 
   createForm() : void {
-    //TODO: REMOVER OS VALORES DO TESTE FRONT
     this.articleForm = this.formBuilder.group({
-      title: new FormControl('teste front', Validators.required),
-      author: new FormControl('teste front', Validators.required),
-      text: new FormControl('teste front', Validators.required)
+      title: new FormControl('', Validators.required),
+      author: new FormControl('', Validators.required),
+      text: new FormControl('', Validators.required)
     })
   }
 
