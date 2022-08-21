@@ -1,0 +1,27 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form [formGroup]="articleForm" (ngSubmit)="onSubmit()">
+            <label>Titulo</label>
+            <input formControlName="title" class="form-control">
+            <div *ngIf="title?.invalid && (title?.dirty || title?.touched)">
+                <span class="text-danger" *ngIf="title.errors?.required">Título é obrigatório</span>
+            </div>
+
+            <label>Texto</label>
+            <textarea  formControlName="text" class="form-control"></textarea>            
+            <div *ngIf="text?.invalid && (text?.dirty || text?.touched)">
+                <span class="text-danger" *ngIf="text.errors?.required">Texto é obrigatório</span>
+            </div>
+
+
+            <label>Autor</label>
+            <input formControlName="author" class="form-control">
+            <div *ngIf="author?.invalid && (author?.dirty || author?.touched)">
+                <span class="text-danger" *ngIf="author.errors?.required">Autor é obrigatório</span>
+            </div>
+
+
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</div>
