@@ -14,6 +14,7 @@ import { LoginComponent } from './components/public/login/login.component';
 import { UserComponent } from './components/public/user/user.component';
 import { LoginService } from './services/login.service';
 import { UserService } from './services/user.services';
+import { ArticlePreviewComponent } from './components/secure/article/components/article-preview/article-preview.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UserService } from './services/user.services';
     ArticleComponent,
     PageNotFoundComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
+    ArticlePreviewComponent
   ],
   imports: [
     BrowserModule,

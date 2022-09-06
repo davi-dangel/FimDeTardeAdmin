@@ -20,6 +20,8 @@
                 <span class="text-danger" *ngIf="author.errors?.required">Autor é obrigatório</span>
             </div>
 
+            <h4>Preview</h4>
+            <app-article-preview [text]="getTextValue()"></app-article-preview>
 
             <button type="submit">Salvar</button>
         </form>

@@ -55,9 +55,10 @@ export class ArticleComponent implements OnInit {
     })
   }
 
-  getTextValue() : string[] {
-    return this.text?.value?.split("\n")
+  getTextValue() : string {
+    return this.text?.value
   }
+  
 
   resetFormValues() : void {
     this.articleForm.reset()
